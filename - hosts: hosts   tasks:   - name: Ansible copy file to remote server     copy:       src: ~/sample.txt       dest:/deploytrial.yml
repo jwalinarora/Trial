@@ -1,0 +1,8 @@
+---
+- hosts: web
+  remote_user: root
+  tasks:
+  - name: Ansible copy file to remote server
+    copy:
+      src: /var/lib/jenkins/workspace/Trial/archana.html
+      dest: /var/www/html
